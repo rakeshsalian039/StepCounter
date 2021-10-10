@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_steps"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:text="0"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        />
+    <TextView
+        android:id="@+id/tv_stepLabel"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:text="Steps"
+        android:layout_alignBottom="@id/tv_steps"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        />
+    <TextView
+        android:id="@+id/tv_calories"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="170dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginLeft="170dp" />
+    <TextView
+        android:id="@+id/tv_caloriesLabel"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="170dp"
+        android:text="Calories"
+        android:layout_alignBottom="@id/tv_calories"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:layout_marginLeft="170dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerInParent="true">
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Step Count"
+            android:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop Steps count"
+            android:backgroundTint="@color/teal_700" />
+
+    </LinearLayout>
+</RelativeLayout>
